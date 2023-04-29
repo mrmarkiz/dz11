@@ -20,6 +20,20 @@ namespace dz11
             }
             return number == a;
         }
+
+        public static int[] Filtr(this int[] array, Func<int, bool> f)
+        {
+            if (array == null)
+                return null;
+            int[] result = new int[0];
+            foreach (int i 
+                in array)
+            {
+                if (f(i))
+                    result = result.Append(i).ToArray();
+            }
+            return result;
+        }
     }
 
     internal class Task1

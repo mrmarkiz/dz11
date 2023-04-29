@@ -23,6 +23,9 @@
                     case 4:
                         Tasks2_4.Run4();
                         break;
+                    case 5:
+                        Task5.Run();
+                        break;
                 }
             } while (choice != 0);
         }
